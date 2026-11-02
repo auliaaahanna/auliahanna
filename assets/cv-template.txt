@@ -1,0 +1,25 @@
+AULIA HANNA SHAFIQA — CV TEMPLATE
+
+This is an editable placeholder, not a completed CV.
+Replace the bracketed fields with accurate information, then export your CV as PDF.
+
+CONTACT
+Email: [your email]
+Location: [city]
+Portfolio: [website URL]
+
+PROFILE
+[Write a short profile using your own background and goals.]
+
+EDUCATION
+[University] — [Study program]
+[Start year] – Present
+
+SKILLS
+[List skills you can accurately describe]
+
+PROJECTS
+[Project title] — [Your role, tools, and outcome]
+
+EXPERIENCE & ACTIVITIES
+[Add only real experience, organization, volunteering, or academic activities.]

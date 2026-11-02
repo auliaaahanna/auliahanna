@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keahlian — Aulia Hanna Shafiqa</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --cream:#fdf9f3; --ink:#3a2e3f; --muted:#6f6475; --accent:#b07a9c;
+      --lav:#e0d8f0; --pink:#e8d5da; --blue:#dde6f2; --green:#dbe5d5;
+    }
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);}
+    h1,h2,h3,.serif{font-family:'Playfair Display',serif;font-weight:700;}
+    .eyebrow{letter-spacing:.2em;font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;}
+    .eyebrow::before{content:"";display:inline-block;width:48px;height:1px;background:var(--muted);vertical-align:middle;margin-right:14px;}
+
+    /* Navbar */
+    .navbar{background:var(--cream);border-bottom:1px solid #eee5dc;}
+    .navbar .nav-link{color:var(--ink);font-weight:500;padding:.5rem 1rem;}
+    .navbar .nav-link.active{border-bottom:2px solid var(--accent);}
+    .brand-badge{width:52px;height:52px;border-radius:50%;background:var(--lav);display:grid;place-items:center;font-weight:700;border:1px solid var(--accent);}
+    .btn-connect{background:var(--ink);color:#fff;border-radius:50px;padding:.7rem 1.6rem;font-weight:700;}
+    .btn-connect:hover{background:#2a2030;color:#fff;}
+
+    /* Hero */
+    .page-hero{padding:80px 0 40px;}
+    .page-hero h1{font-size:clamp(2.6rem,6vw,4.5rem);line-height:1.05;}
+
+    /* Skill cards */
+    .skill-card{border:none;border-radius:28px;overflow:hidden;height:100%;
+      box-shadow:0 6px 24px rgba(58,46,63,.06);transition:transform .25s, box-shadow .25s;background:#fff;}
+    .skill-card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(58,46,63,.12);}
+    .skill-head{padding:22px 28px;display:flex;justify-content:space-between;align-items:center;}
+    .skill-head .num{font-family:'Playfair Display',serif;font-size:1.8rem;}
+    .skill-head .tag{font-size:.72rem;letter-spacing:.14em;font-weight:700;text-transform:uppercase;}
+    .skill-body{padding:26px 28px 30px;}
+    .skill-body h3{font-size:1.6rem;margin-bottom:.5rem;}
+    .skill-body p{color:var(--muted);font-size:.95rem;}
+
+    .skill-item{margin-top:18px;}
+    .skill-item .label{display:flex;justify-content:space-between;font-size:.88rem;font-weight:500;margin-bottom:6px;}
+    .progress{height:8px;background:#f0e9e2;border-radius:10px;}
+    .progress-bar{background:var(--accent);border-radius:10px;width:0;transition:width 1.2s ease;}
+
+    /* Chips */
+    .chip{display:inline-block;border:1px solid #e3d9d0;border-radius:50px;padding:.35rem 1rem;font-size:.82rem;margin:0 6px 8px 0;background:#fff;}
+
+    /* Soft skills */
+    .soft{background:linear-gradient(135deg,#f6dccf,#e9d3dc 55%,#ddd3ee);border-radius:32px;padding:48px;}
+    .soft-item{background:rgba(255,255,255,.75);border-radius:20px;padding:20px 22px;height:100%;}
+    .soft-item h4{font-family:'Playfair Display',serif;font-size:1.15rem;}
+
+    footer{padding:40px 0;color:var(--muted);font-size:.9rem;}
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+      <span class="brand-badge">AHS</span>
+      <span class="d-flex flex-column lh-sm">
+        <strong style="font-size:1rem">Aulia Hanna Shafiqa</strong>
+        <small class="text-muted">personal portfolio · 2026</small>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <ul class="navbar-nav align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link active" href="keahlian.html">Keahlian</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-connect" href="contact.html">Let's Connect ↗</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="page-hero">
+  <div class="container">
+    <div class="eyebrow mb-3">Keahlian</div>
+    <h1>Hal yang bisa<br>saya <span style="color:var(--accent)">kerjakan.</span></h1>
+    <p class="mt-3 text-muted" style="max-width:560px">
+      Kemampuan teknis dan non-teknis yang saya kembangkan melalui perkuliahan, praktikum, dan proyek pribadi.
+    </p>
+  </div>
+</header>
+
+<!-- SKILLS GRID -->
+<main class="container pb-5">
+  <div class="row g-4">
+
+    <!-- 01 -->
+    <div class="col-md-6">
+      <div class="card skill-card">
+        <div class="skill-head" style="background:var(--lav)">
+          <span><span class="num">01</span> &nbsp;<span class="tag">Web Development</span></span>
+        </div>
+        <div class="skill-body">
+          <h3>Pengembangan Web</h3>
+          <p>Membuat tampilan website yang responsif, rapi, dan mudah digunakan.</p>
+          <div class="skill-item"><div class="label"><span>HTML</span><span>90%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="90"></div></div></div>
+          <div class="skill-item"><div class="label"><span>CSS</span><span>85%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="85"></div></div></div>
+          <div class="skill-item"><div class="label"><span>Bootstrap</span><span>85%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="85"></div></div></div>
+          <div class="skill-item"><div class="label"><span>JavaScript</span><span>65%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="65"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="col-md-6">
+      <div class="card skill-card">
+        <div class="skill-head" style="background:var(--pink)">
+          <span><span class="num">02</span> &nbsp;<span class="tag">Database</span></span>
+        </div>
+        <div class="skill-body">
+          <h3>Basis Data</h3>
+          <p>Merancang tabel, relasi, dan mengelola data secara terstruktur.</p>
+          <div class="skill-item"><div class="label"><span>SQL</span><span>80%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="80"></div></div></div>
+          <div class="skill-item"><div class="label"><span>PostgreSQL</span><span>70%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="70"></div></div></div>
+          <div class="skill-item"><div class="label"><span>SQLite</span><span>75%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="75"></div></div></div>
+          <div class="skill-item"><div class="label"><span>Database Design</span><span>75%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="75"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="col-md-6">
+      <div class="card skill-card">
+        <div class="skill-head" style="background:var(--blue)">
+          <span><span class="num">03</span> &nbsp;<span class="tag">Programming</span></span>
+        </div>
+        <div class="skill-body">
+          <h3>Pemrograman</h3>
+          <p>Membangun aplikasi desktop dan sistem informasi sederhana.</p>
+          <div class="skill-item"><div class="label"><span>Python</span><span>80%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="80"></div></div></div>
+          <div class="skill-item"><div class="label"><span>Tkinter</span><span>70%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="70"></div></div></div>
+          <div class="skill-item"><div class="label"><span>PHP &amp; XAMPP</span><span>60%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="60"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="col-md-6">
+      <div class="card skill-card">
+        <div class="skill-head" style="background:var(--green)">
+          <span><span class="num">04</span> &nbsp;<span class="tag">Artificial Intelligence</span></span>
+        </div>
+        <div class="skill-body">
+          <h3>AI &amp; Analisis Data</h3>
+          <p>Mempelajari metode penalaran berbasis kasus dan analisis data.</p>
+          <div class="skill-item"><div class="label"><span>Case-Based Reasoning</span><span>70%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="70"></div></div></div>
+          <div class="skill-item"><div class="label"><span>Data Analysis</span><span>65%</span></div>
+            <div class="progress"><div class="progress-bar" data-level="65"></div></div></div>
+          <div class="mt-4">
+            <span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">CBR</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOOLS -->
+  <section class="mt-5 pt-4">
+    <div class="eyebrow mb-3">Tools</div>
+    <h2 style="font-size:2.4rem">Yang sehari-hari saya pakai.</h2>
+    <div class="mt-3">
+      <span class="chip">VS Code</span><span class="chip">XAMPP</span><span class="chip">Git &amp; GitHub</span>
+      <span class="chip">Figma</span><span class="chip">Canva</span><span class="chip">Microsoft Office</span>
+    </div>
+  </section>
+
+  <!-- SOFT SKILLS -->
+  <section class="soft mt-5">
+    <div class="eyebrow mb-3">Soft Skills</div>
+    <h2 class="mb-4" style="font-size:2.4rem">Bukan cuma soal kode.</h2>
+    <div class="row g-3">
+      <div class="col-6 col-lg-3"><div class="soft-item"><h4>Komunikasi</h4><small class="text-muted">Menyampaikan ide dengan jelas.</small></div></div>
+      <div class="col-6 col-lg-3"><div class="soft-item"><h4>Kerja Tim</h4><small class="text-muted">Kolaborasi dalam proyek kelompok.</small></div></div>
+      <div class="col-6 col-lg-3"><div class="soft-item"><h4>Problem Solving</h4><small class="text-muted">Menganalisis dan mencari solusi.</small></div></div>
+      <div class="col-6 col-lg-3"><div class="soft-item"><h4>Manajemen Waktu</h4><small class="text-muted">Menyelesaikan tugas tepat waktu.</small></div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container text-center">© 2026 Aulia Hanna Shafiqa</div>
+</footer>
+
+<!-- Sesuaikan path ini juga -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  // Animasi progress bar saat terlihat di layar
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const bar = e.target;
+        bar.style.width = bar.dataset.level + '%';
+        io.unobserve(bar);
+      }
+    });
+  }, { threshold: .4 });
+  document.querySelectorAll('.progress-bar').forEach(b => io.observe(b));
+</script>
+</body>
+</html>
